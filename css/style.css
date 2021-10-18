@@ -1,0 +1,119 @@
+.logo-h{
+    justify-content: center;
+    text-align: center;
+}
+
+.nav{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#img-banner{
+    display: flex;
+    position: relative;
+    left: 25%;
+}
+#banner-pedido{
+    margin-bottom: 10%;
+}
+
+#button-pedido{
+    position: relative;
+    left: 42%;
+    margin: 3%;
+    background-color: rgb(82, 202, 82);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 5px 5px 5px 0px rgba(186,186,155,0.51);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+}
+
+.section-us{
+    display: flex;
+    margin: 5%;
+    margin-bottom: 15%;
+}
+
+.p-us{
+    margin: 5%;    
+    font-size: 20px;
+}
+
+#h-us{
+    font-size: 35px;    
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+#h-serv{
+    text-align: start;
+    margin: 3%;
+    font-size: 35px;
+    padding-left: 20%;   
+    font-family: 'Lobster', cursive;
+}
+
+.section-serv{
+    display: flex;
+    margin: 3%;
+    margin-bottom: 15%;
+}
+
+#planes-h{
+    margin: 3%;
+    font-size: 35px;
+    text-align: center;   
+    font-family: 'Lobster', cursive;
+}
+
+#planes-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-plan{
+    margin: 30px;
+}
+
+#form-contact{
+    display: table-caption;
+}
+
+#video-prueba{
+    position: relative;
+    left: 25%;
+}
+
+.h2-style{
+    font-size: 35px;
+    text-align: center;   
+    font-family: 'Lobster', cursive;
+}
+
+table{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    padding: 10px;
+    height: 360px;
+    
+}
+.table-b, th, td{
+    border-style: solid;
+    
+    height: 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+footer{
+    background-color: rgb(82, 202, 82);
+    height: 15vh;
+    text-align: center;
+    padding: 10px;
+}
