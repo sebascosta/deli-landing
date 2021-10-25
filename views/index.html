@@ -20,12 +20,21 @@
 
     <!--Menú Navegable-->
 
-    <nav class="nav">
-        <ul><a href="index.html">Inicio</a></ul>
-        <ul><a href="planes.html">Planes</a></ul>
-        <ul><a href="servicios.html">Servicios</a></ul>
-        <ul><a href="nosotros.html">Nosotros</a></ul>
-        <ul><a href="contacto.html">Contacto</a></ul>
+    <nav id="nav-div">
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planes.html">Planes</a>
+                <ul id="submenu">
+                    <li><a href="#">Fit Plan</a></li>
+                    <li><a href="#">Keto</a></li>
+                    <li><a href="#">Bajas calorias</a></li>
+                    <li><a href="#">Gourmet</a></li>
+                </ul>
+            </li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
 
      <!--Banner y botón para hacer pedido-->
@@ -155,7 +164,14 @@
                 </tr>
             </table>
         </div>
-
+        <div>
+            <h3>Precios</h3>
+            <ol class="list">
+                <li>Keto - Fit - Gourmet : $1900</li>
+                <li>Bajas calorías - Veggie : $1800</li>
+                <li>Pancakes Proteicos : $400</li>
+            </ol>
+        </div>
     <footer>
     <h4>Seguinos en las redes!</h4>
     <h3>Deli Rose Viandas</h3>
