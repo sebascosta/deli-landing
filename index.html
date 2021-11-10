@@ -32,7 +32,7 @@
             <li><a href="planes.html">Planes</a>
                 <ul id="submenu">
                     <li><a href="views/fit.html">Fit Plan</a></li>
-                    <li><a href="#">Keto</a></li>
+                    <li><a href="views/keto.html">Keto</a></li>
                     <li><a href="#">Bajas calorias</a></li>
                     <li><a href="#">Gourmet</a></li>
                 </ul>
@@ -42,6 +42,21 @@
             <li><a href="#contacto-formulario">Contacto</a></li>
         </ul>
     </nav>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-secondary p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-secondary" id="nav-collapse">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
 
      <!--Banner y botón para hacer pedido-->
     
@@ -99,7 +114,9 @@
     <section>
         <h2 id="h-us">Nuestra Historia</h2>
         <div class="section-us">
-            <img src="../images/palta.jpg" style="width: 450px" >
+            <div class="us-div-imagen">
+            <img src="../images/palta.jpg"  id="us-img" >
+            </div>
             <p class="p-us">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum, dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum,dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum, dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
@@ -122,7 +139,9 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum,dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum,dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
             </p>
+            <div class="us-div-imagen">
             <img src="../images/salad3.jpg" style="width: 450px;">
+        </div>
         </div>
     </section>
 
@@ -137,23 +156,31 @@
             <div class="img-plan">
                 <h3 class="planTitle">Fit</h3>
                 <img src="../images/menuFit-min.jpg" width="300px" margin="10px">
+                <div>
                 <button class="button-pedidoPlan">Hacer Pedido</button>
+                </div>
             </div>
             
             <div class="img-plan">
                 <h3 class="planTitle">Keto</h3>
                 <img src="../images/menuKeto-min.jpg" width="300px">
-                <button class="button-pedidoPlan">Hacer Pedido</button>
+                <div>
+                    <button class="button-pedidoPlan">Hacer Pedido</button>
+                </div>
             </div>
             <div class="img-plan">
                 <h3 class="planTitle">Bajas calorías</h3>
                 <img src="../images/menuBC-min.jpg" width="300px">
-                <button class="button-pedidoPlan">Hacer Pedido</button>
+                <div>
+                    <button class="button-pedidoPlan">Hacer Pedido</button>
+                </div>
             </div>
             <div class="img-plan">
                 <h3 class="planTitle">Gourmet</h3>
                 <img src="../images/menuGourmet-min.jpg" width="300px" height= "424px">
-                <button class="button-pedidoPlan">Hacer Pedido</button>
+                <div>
+                    <button class="button-pedidoPlan">Hacer Pedido</button>
+                </div>
             </div>
         </div>
 
@@ -278,11 +305,11 @@
             </ol>
         </div>
         -->
-
+        <!--
     <div id="div-logo">
         <img src="/images/logo.jpg" id="logo-transform">
     </div>
-
+        -->
     <footer>
     <h4>Seguinos en las redes!</h4>
     <div id="imgFooter">

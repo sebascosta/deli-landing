@@ -328,32 +328,6 @@ footer{
 
 
 
-/*        Media queries       */
-
-/*Background color del nav cambia en dispositivos menores a 768px */
-/*
-@media only screen and (min-width: 768px){
-    .nav{
-        background-color: rgba(186,186,155,0.51); 
-    }
-}
-
-@media only screen and (max-width: 767px){
-    .nav{
-        background-color:none 
-    }
-}
-*/
-/*Background color de la seccion para tablet con un mac 768px*/
-/*
-    @media only screen and (max-width: 768px){
-    #servicio-seccion{
-        max-width: 768px;
-        background-color: grey;
-            }
-    }
-*/
-
 #cont-1{
     background-image: url("../images/getStronger.jpg");
 }
@@ -382,7 +356,7 @@ footer{
     from { background-position: 0 0}
     to   { background-position: 100% 100%}
 }
-
+/*
 #div-logo{
     transform: rotate(180deg);
     justify-content: center;
@@ -392,4 +366,92 @@ footer{
     transform: scale(2,1);
     width: 20%;
     height: 20%;
+}
+
+*/
+
+/*        Media queries       */
+
+
+@media only screen and (max-width: 320px){
+    #nav-id{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width:2560px ) {
+    #nav-collapse{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width:426px ) {
+    #nav-collapse{
+        display: flex;
+    }
+}
+
+@media only  screen and (max-width:426px) and (min-width:57px) {
+    #nav-div{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width:2560px) and (min-width:427) {
+    #nav-div{
+        display: flex;
+    }
+}
+
+
+@media only  screen and (max-width:426px) and (min-width:57px) {
+    .section-us{
+        margin: 5%;
+        display: flex;
+        margin-bottom: 10%;
+        flex-direction: column;
+    }
+}
+    
+@media only  screen and (max-width:426px) and (min-width:57px) {
+    #us-img{
+        width: 45vh;
+    }
+}
+
+@media only  screen and (min-width:426px) and (max-width:1024px) {
+    .us-div-imagen{
+        
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:426px) and (max-width:1024px) {
+    .section-us{
+        display: flex;
+        margin: 5%;
+        flex-direction: column;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:1024px) {
+    .sectionServ{
+        display: flex;
+        margin: 5%;
+        flex-direction: column-reverse;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:426px) and (max-width:1024px) {
+    #planesImg{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+}
 }
