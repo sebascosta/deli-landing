@@ -1,0 +1,487 @@
+@import "variables";
+
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-h{
+    justify-content: center;
+    text-align: center;
+}
+#nav-div{
+    margin-bottom: 10%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+body{
+    text-align: center;   
+    
+}
+
+.nav{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    font-family: $fontPrimary; 
+    font-size: 30px;
+    li{
+        position: relative;
+        background-color: rgba(192, 192, 113, 0.8);  
+        z-index: 1;      
+        ul {
+        position: absolute;
+        display:none ;  
+          
+        }
+    }
+}
+
+
+.nav ul li {
+    display: block;
+}
+
+.nav li:hover ul{
+    display: block;
+}
+
+.nav li a{
+    padding: 25px;
+    text-decoration: none;
+    display: block;
+    color: white
+}
+.nav li a:hover {
+    background-color: darkgrey;
+}
+
+#submenu{
+    list-style: none;
+    position: absolute;   
+}
+#submenu li a{
+    padding: 10px;
+}
+
+#submenu li:hover{
+    background-color: darkgrey;
+    cursor: pointer;    
+    z-index: 1;
+}
+
+.img-banner{
+    display: flex;
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+#banner-pedido{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.hacer-pedidoDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#button-pedido{
+    margin: 3%;
+    background-color: $buttonColor;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /*texto*/
+    font-size: large;
+    box-shadow: 5px 5px 5px 0px rgba(186,186,155,0.51);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+}
+#button-pedido:hover{
+    cursor: pointer;
+}
+
+/*Estilo de Seccion Nosotros*/
+
+.section-us{
+    display: flex;
+    margin: 5%;
+    margin-bottom: 10%;
+}
+
+.p-us{
+    margin: 2%;    
+    font-size: 20px;
+    font-family: $fontSecundary
+}
+
+#h-us{
+    font-size: 35px;    
+    text-align: center;
+    font-family: $fontPrimary 
+}
+
+#h-serv{
+    text-align: start;
+    margin: 3%;
+    font-size: 35px;
+    padding-left: 20%;   
+    font-family: $fontPrimary 
+}
+
+/*Estilo de Seccion Servicios*/
+
+.sectionServ{
+    display: flex;
+    margin: 3%;
+    margin-bottom: 15%;
+    align-items: center;
+}
+
+/*Estilo de seccion Planes*/
+
+#planes-h{
+    font-size: 35px;
+    text-align: center;   
+    font-family: 'Bebas Neue',cursive; 
+}
+
+.planTitle{
+    font-family: 'Bebas Neue',cursive;
+    text-align: center;
+}
+
+#planesImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .img-plan{
+        margin: 15px;    
+    }    
+}
+
+.button-pedidoPlan{
+    background-color: $buttonColor;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /*texto*/
+    font-size: large;
+    box-shadow: 5px 5px 5px 0px rgba(186,186,155,0.51);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+    
+}
+
+.button-pedidoPlan:hover{
+    cursor: pointer;
+}
+
+    
+
+/*Estilo Pancakes*/
+
+.pancake-div{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    grid-auto-columns: min-content;
+}
+
+
+/*Estilo de Contacto*/
+
+.contacto-imagen{
+    background-image: url(../images/mesada.jpg);
+    background-size: cover;
+    margin: 5%;
+
+}
+
+.seccionContacto{
+    display:flex ;
+    flex-direction: column;
+    margin: 5%
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 5%
+}
+
+/*Incluye text-align-last - flex-direction: column */
+
+#formContact{
+    flex-direction: column;
+    padding: 5%;
+    position: relative;
+    left: 35%;
+    margin-bottom: 5%;
+    font-family: $fontSecundary;
+    font-size: 20px;
+    width: 40%;
+    line-height:2rem;
+    text-align-last: right;
+}
+
+
+
+/*Tipografía de Google fonts */
+.h2-style{
+    font-size: 40px;
+    text-align: center;   
+    font-family: $fontPrimary
+}
+
+/*Ejercicio de tablas*/
+
+table{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    padding: 10px;
+    height: 360px;
+    
+}
+
+.table-b, th, td{
+    border-style: solid;
+    
+    height: 60px;
+    font-family: 'Inter', sans-serif;
+}
+/*Estilo de lista */
+.list{
+    list-style-type: upper-roman;
+}
+
+/*Background color en Footer*/
+footer{
+    background-color: rgb(82, 202, 82);
+    height: 15vh;
+    text-align: center;
+    padding: 10px;
+    font-family: $fontPrimary;
+}
+
+#clear{
+    background-color: rgb(212, 84, 84);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /*texto*/
+    font-size: large;
+    box-shadow: 5px 5px 5px 0px rgba(186,186,155,0.51);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+}
+
+#enviar{
+    background-color: rgb(82, 202, 82);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /*texto*/
+    font-size: large;
+    box-shadow: 5px 5px 5px 0px rgba(186,186,155,0.51);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(186,186,155,0.51);
+}
+
+
+/*Display Flex - Flex direction*/
+#imgFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-foot{
+    width: 50px;
+}
+
+footer{
+    height: 20%;
+}
+
+/*Ejemplo de uso de Grid-->*/
+
+.grid-layout{
+    background-color: grey;    
+    display: grid; 
+    grid-template-columns: auto auto;       
+    justify-content: center;
+    grid-row-gap: 2px;
+    
+}
+
+
+.caja{
+    width: 150px;
+    
+    border: 4px solid black;
+    background-color: rgb(82, 202, 82);
+    margin: 10px;
+    text-align: center;
+    line-height: 150px
+}
+
+
+
+#cont-1{
+    background-image: url("../images/getStronger.jpg");
+}
+#img-fitPoster{
+    height: 100vh;
+    
+}
+/* Banner gradient*/
+.banner{
+    height: 200px;
+    margin: 3% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nautilus pompilius',cursive;
+    font-size:100px;
+    color: white;
+    background-image: linear-gradient(
+        to bottom right,
+        #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%
+    );
+    background-size: 200% 200%;
+    animation: movingGradient 5s linear infinite alternate;
+}
+
+
+
+@keyframes movingGradient {
+    from { background-position: 0 0}
+    to   { background-position: 100% 100%}
+}
+/*
+#div-logo{
+    transform: rotate(180deg);
+    justify-content: center;
+    display: flex;
+}
+#logo-transform{
+    transform: scale(2,1);
+    width: 20%;
+    height: 20%;
+}
+
+*/
+
+/*        Media queries       */
+
+
+@media only screen and (max-width: 320px){
+    #nav-id{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width:2560px ) {
+    #nav-collapse{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width:426px ) {
+    #nav-collapse{
+        display: flex;
+    }
+}
+
+@media only  screen and (max-width:426px) and (min-width:57px) {
+    #nav-div{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width:2560px) and (min-width:427) {
+    #nav-div{
+        display: flex;
+    }
+}
+
+
+@media only  screen and (max-width:426px) and (min-width:57px) {
+    .section-us{
+        margin: 5%;
+        display: flex;
+        margin-bottom: 10%;
+        flex-direction: column;
+    }
+}
+    
+@media only  screen and (max-width:426px) and (min-width:57px) {
+    #us-img{
+        width: 45vh;
+    }
+}
+
+@media only  screen and (min-width:426px) and (max-width:1024px) {
+    .us-div-imagen{
+        
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:426px) and (max-width:1024px) {
+    .section-us{
+        display: flex;
+        margin: 5%;
+        flex-direction: column;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:1024px) {
+    .sectionServ{
+        display: flex;
+        margin: 5%;
+        flex-direction: column-reverse;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:426px) and (max-width:1024px) {
+    #planesImg{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+}
+}
+
+@media only screen and (min-width:426px) and (max-width:768px){
+    #formContact{
+    flex-direction: column;
+    padding: 5%;
+    position: relative;
+    left: 555%;
+    margin-bottom: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 40%;
+    line-height:2rem;
+    text-align-last: right;
+    }
+}
+
+$center-div: display flex, justify-content center, margin 5px;
+
