@@ -1,13 +1,26 @@
 $buttonColor: rgb(82, 202, 82);
 $fontPrimary: 'Bebas Neue',cursive; 
 $fontSecundary: 'Urbanist', sans-serif;
+$anchoTablet: 768px;
+$anchoPc:1024px;
+$heightLarge:30%;
 
+@mixin sizes($widthTablet, $heightLarge){
+    width:$widthTablet;
+    height: $heightLarge;
+    
+}
 
 .footer{
     background-color: $buttonColor;
     &--color{ 
         background-color: red;
+        // operacion //
+        background-size: $anchoPc/2;
+        //mixin//
+        @include sizes(800px, 200px);
     }
+   
 }
 
 .header{
@@ -37,6 +50,6 @@ $fontSecundary: 'Urbanist', sans-serif;
     &--contactoDos{
         margin: 2% 5%;
         padding: 5%;
-        
+
     }
 }

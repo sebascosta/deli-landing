@@ -2,7 +2,10 @@
 .footer {
   background-color: #52ca52; }
   .footer--color {
-    background-color: red; }
+    background-color: red;
+    background-size: 512px;
+    width: 800px;
+    height: 200px; }
 
 .header {
   background-color: #52ca52; }
