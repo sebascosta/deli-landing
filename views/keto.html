@@ -19,76 +19,34 @@
 </head>
 <body>
     <header>
-       <!-- <div class="logo-h">
+       <div class="logo-h">
         <img src="../images/logo.jpg" height="100px">
+        <h1 style="font-family: 'Lobster', cursive;">Viandas Saludables</h1>
+        </div>
+
+         <!--Menú Navegable-->
+
         
-        </div>-->
+    <nav id="nav-div">
+      <ul class="nav">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="planes.html">Planes</a>
+              <ul id="submenu">
+                  <li><a href="fit.html">Fit Plan</a></li>
+                  <li><a href="keto.html">Keto</a></li>
+                  <li><a href="bc.html">Bajas calorias</a></li>
+                  <li><a href="gourmet.html">Gourmet</a></li>
+              </ul>
+          </li>
+          <li><a href="#servicio-seccion">Servicios</a></li>
+          <li><a href="#h-us">Nosotros</a></li>
+          <li><a href="#contacto-formulario">Contacto</a></li>
+      </ul>
+  </nav>
     </header>
 
-    <!--Menú Navegable-->
-
-    <nav class="navbar navbar-light bg-transparent fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" height="100px"></a>
-          <button class="navbar-toggler bg-dark " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon btn btn-close-white"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                  </li> 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Planes
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="/views/fit.html">FitPlan</a></li>
-                    <li><a class="dropdown-item" href="#">Keto</a></li>
-                    <li><a class="dropdown-item" href="#">Bajas Calorías</a></li>
-                    <li><a class="dropdown-item" href="#">Gourmet</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Contacto</a></li>
-                  </ul>
-                </li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-      </nav>
-
-    <!--
-    <nav id="nav-div">
-        <ul class="nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="planes.html">Planes</a>
-                <ul id="submenu">
-                    <li><a href="fit.html">Fit Plan</a></li>
-                    <li><a href="keto.html">Keto</a></li>
-                    <li><a href="bc.html">Bajas calorias</a></li>
-                    <li><a href="gourmet.html">Gourmet</a></li>
-                </ul>
-            </li>
-            <li><a href="#servicio-seccion">Servicios</a></li>
-            <li><a href="#h-us">Nosotros</a></li>
-            <li><a href="#contacto-formulario">Contacto</a></li>
-        </ul>
-    </nav>
-    -->
+   
+    
      <!--Banner y botón para hacer pedido-->
     
     <div id="banner-pedido">
@@ -100,17 +58,17 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active " data-bs-interval="5000">
-                <img src="../images/menuKeto.jpg" class="d-block w-50 h-50 rounded mx-auto d-block img-fluid" alt="...">
+                <img src="../images/keto-2339718.jpeg" class="d-block w-50 h-50 rounded mx-auto d-block img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="../images/beast.jpg" class="d-block w-50 h-50 rounded mx-auto d-block img-fluid" alt="...">
+                <img src="../images/keto-2339718.jpeg" class="d-block w-50 h-50 rounded mx-auto d-block img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="../images/fitposter.jpg" class="d-block w-50 h-25 rounded mx-auto d-block img-fluid" alt="...">
+                <img src="../images/keto-2339718.jpeg" class="d-block w-50 h-25 rounded mx-auto d-block img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
               </div>
@@ -132,12 +90,12 @@
     <!--Seccion de Nosotros e historia-->
 
     <div class="container-md d-flex justify-content-center" >
-        <img src="../images/getStronger.jpg" class="img-fluid" id="img-fitPoster">
+        <img src="../images/Dont worry, be happy!-min.jpg" class="img-fluid" id="img-fitPoster">
     </div>
     <!--Seccion de Servicios-->
 
     <section id="servicio-seccion">
-        <h2 id="h-serv">Fit Plan - Pensado para atletas</h2>
+        <h2 id="h-serv">Keto Plan - Metabolismo acelerado</h2>
 
         <!--camelCase-->
         <div class="sectionServ">            
@@ -147,7 +105,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum,dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad dignissimos consectetur, tenetur at delectus quia maiores ipsum,dolorem, praesentium modi ducimus ex iste repellendus error sequi magni natus numquam quibusdam.
             </p>
-            <img src="../images/Copia de Greyscale Photo Fitness Gym Poster.jpg" style="width: 450px;">
+            <img src="../images/viandas-deli-min.jpg" style="width: 450px;">
         </div>
     </section>
 
@@ -160,34 +118,29 @@
 
         <div id="planesImg">
             <div class="img-plan">
-                <h3 class="planTitle">Fit</h3>
-                <img src="../images/menuFit.jpg" width="300px" margin="10px">
+                <h3 class="planTitle">Keto - Semana 1</h3>
+                <img src="../images/menuKeto-min.jpg" width="300px" margin="10px">
                 <button class="button-pedidoPlan">Hacer Pedido</button>
             </div>
             
             <div class="img-plan">
-                <h3 class="planTitle">Keto</h3>
-                <img src="../images/menufit2.jpg" width="300px">
+                <h3 class="planTitle">Keto - Semana 2</h3>
+                <img src="../images/menuKeto-min.jpg" width="300px">
                 <button class="button-pedidoPlan">Hacer Pedido</button>
             </div>
             <div class="img-plan">
-                <h3 class="planTitle">Bajas calorías</h3>
-                <img src="../images/menufit3.jpg" width="300px">
+                <h3 class="planTitle">Keto - Semana 3</h3>
+                <img src="../images/menuKeto-min.jpg" width="300px">
                 <button class="button-pedidoPlan">Hacer Pedido</button>
             </div>
             <div class="img-plan">
-                <h3 class="planTitle">Gourmet</h3>
-                <img src="../images/menufit4.jpg" width="300px" height= "424px">
+                <h3 class="planTitle">Keto - Semana 4</h3>
+                <img src="../images/menuKeto-min.jpg" width="300px" height= "424px">
                 <button class="button-pedidoPlan">Hacer Pedido</button>
             </div>
         </div>
 
     </section>
-    <div class="pancake-div"<>
-        <h2 class="h2-style" style="text-align: center; font-size: 30px;">Pancakes Proteicos</h2>
-       <img src="../images/pancakesPRO.jpg">
-       <h3>Pancakes elaborados a base de clara de huevo y  proteína en polvo</h3>
-    </div>
 
     <!--Formulario de contacto-->
 
