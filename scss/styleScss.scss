@@ -483,5 +483,103 @@ footer{
     }
 }
 
+a:link, a:visited, a:active {
+text-decoration: none;
+color: white;
+}
+
 $center-div: display flex, justify-content center, margin 5px;
 
+#cards-p{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;       
+    justify-content: center;    
+}
+.box1{
+    background-color: rgb(145, 139, 139);
+    height: 70vh;
+    margin: 1vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffff;
+    font-family:$fontPrimary ;
+    font-size: 30px;
+    
+}
+
+.box2{
+    background-color: rgb(145, 139, 139);
+    height: 70vh;
+    margin: 1vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffff;
+    font-family:$fontPrimary ;
+    font-size: 30px;
+}
+.box3{
+    background-color: rgb(145, 139, 139);
+    height: 70vh;
+    margin: 1vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffff;
+    font-family:$fontPrimary ;
+    font-size: 30px;
+}
+.box4{
+    background-color: rgb(145, 139, 139);
+    height: 70vh;
+    margin: 1vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffff;
+    font-family:$fontPrimary ;
+    font-size: 30px;
+}
+
+.box1:hover{
+    background-color: red;
+    cursor: pointer;
+    transform: scale(0.9);
+    font-size: 45px;
+}
+.box2:hover{
+    background-color: rgba(158,135,57,255);
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+
+.box3:hover{
+    background-color: rgba(64,124,60,255);
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.box4:hover{
+    background-color: rgba(31,159,234,255)  ;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.d-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+#img-center{
+    height: 80vh;
+}
+
+.btn-planes{
+    @include justify();
+    margin-top: 2%;
+}

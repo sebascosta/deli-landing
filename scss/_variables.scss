@@ -11,6 +11,12 @@ $heightLarge:30%;
     
 }
 
+@mixin justify() {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .footer{
     background-color: $buttonColor;
     &--color{ 

@@ -1,4 +1,51 @@
 @charset "UTF-8";
+.footer {
+  background-color: #52ca52;
+}
+
+.footer--color {
+  background-color: red;
+  background-size: 512px;
+  width: 800px;
+  height: 200px;
+}
+
+.header {
+  background-color: #52ca52;
+}
+
+.header--light {
+  background-color: none;
+}
+
+.banner {
+  font-family: 'Nautilus pompilius',cursive;
+  font-size: 100px;
+}
+
+.banner--bannerSecundary {
+  font-family: "Bebas Neue", cursive;
+  font-size: 120px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#4affde), color-stop(40%, #5b9dff), color-stop(60%, #d06bff), to(#ff34d2));
+  background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%);
+}
+
+.seccionContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5%;
+}
+
+.seccionContacto--contactoDos {
+  margin: 2% 5%;
+  padding: 5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +62,14 @@
 
 #nav-div {
   margin-bottom: 10%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 body {
   text-align: center;
-  
 }
 
 .nav {
@@ -31,17 +81,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  font-family: 'Bebas Neue',cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 30px;
 }
 
 .nav li {
   position: relative;
-  background-color: rgba(192, 192, 113, 0.51);
+  background-color: rgba(192, 192, 113, 0.8);
   z-index: 1;
 }
 
-.nav ul {
+.nav li ul {
   position: absolute;
   display: none;
 }
@@ -130,15 +180,15 @@ body {
 }
 
 .p-us {
-  margin: 5%;
+  margin: 2%;
   font-size: 20px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 #h-us {
   font-size: 35px;
   text-align: center;
-  font-family: 'Bebas Neue',cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 #h-serv {
@@ -146,7 +196,7 @@ body {
   margin: 3%;
   font-size: 35px;
   padding-left: 20%;
-  font-family: 'Bebas Neue',cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 /*Estilo de Seccion Servicios*/
@@ -156,6 +206,9 @@ body {
   display: flex;
   margin: 3%;
   margin-bottom: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*Estilo de seccion Planes*/
@@ -187,6 +240,22 @@ body {
   margin: 15px;
 }
 
+.button-pedidoPlan {
+  background-color: #52ca52;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  /*texto*/
+  font-size: large;
+  box-shadow: 5px 5px 5px 0px rgba(186, 186, 155, 0.51);
+  -webkit-box-shadow: 6px 7px 5px 0px rgba(186, 186, 155, 0.51);
+  -moz-box-shadow: 6px 7px 5px 0px rgba(186, 186, 155, 0.51);
+}
+
+.button-pedidoPlan:hover {
+  cursor: pointer;
+}
+
 /*Estilo Pancakes*/
 .pancake-div {
   display: -ms-grid;
@@ -194,6 +263,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10%;
+  grid-auto-columns: -webkit-min-content;
+  grid-auto-columns: min-content;
 }
 
 /*Estilo de Contacto*/
@@ -235,7 +307,7 @@ body {
   position: relative;
   left: 35%;
   margin-bottom: 5%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 20px;
   width: 40%;
   line-height: 2rem;
@@ -246,7 +318,7 @@ body {
 .h2-style {
   font-size: 40px;
   text-align: center;
-  font-family: 'Bebas Neue',cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 /*Ejercicio de tablas*/
@@ -282,6 +354,7 @@ footer {
   height: 15vh;
   text-align: center;
   padding: 10px;
+  font-family: "Bebas Neue", cursive;
 }
 
 #clear {
@@ -306,22 +379,6 @@ footer {
   box-shadow: 5px 5px 5px 0px rgba(186, 186, 155, 0.51);
   -webkit-box-shadow: 6px 7px 5px 0px rgba(186, 186, 155, 0.51);
   -moz-box-shadow: 6px 7px 5px 0px rgba(186, 186, 155, 0.51);
-}
-
-.button-pedidoPlan {
-  background-color: #52ca52;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  /*texto*/
-  font-size: large;
-  box-shadow: 5px 5px 5px 0px rgba(186, 186, 155, 0.51);
-  -webkit-box-shadow: 6px 7px 5px 0px rgba(186, 186, 155, 0.51);
-  -moz-box-shadow: 6px 7px 5px 0px rgba(186, 186, 155, 0.51);
-}
-
-.button-pedidoPlan:hover {
-  cursor: pointer;
 }
 
 /*Display Flex - Flex direction*/
@@ -376,6 +433,7 @@ footer {
   height: 100vh;
 }
 
+/* Banner gradient*/
 .banner {
   height: 200px;
   margin: 3% 0;
@@ -553,5 +611,29 @@ footer {
     line-height: 2rem;
     text-align-last: right;
   }
+}
+
+.main {
+  height: 100vh;
+}
+
+.box1 {
+  background-color: darkblue;
+  height: 20vh;
+}
+
+.box2 {
+  background-color: blue;
+  height: 20vh;
+}
+
+.box3 {
+  background-color: lightblue;
+  height: 20vh;
+}
+
+.box4 {
+  background-color: coral;
+  height: 20vh;
 }
 /*# sourceMappingURL=styleScss.css.map */
