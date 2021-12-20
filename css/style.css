@@ -345,6 +345,7 @@ footer {
 }
 
 */
+/*  Media queries    */
 @media only screen and (min-width: 320px) and (max-width: 426px) {
   .banner {
     height: 200px;
@@ -457,7 +458,6 @@ footer {
   #planesImg .img-plan {
     margin: 22px; } }
 
-/*  Media queries    */
 a:link, a:visited, a:active {
   text-decoration: none;
   color: white; }
